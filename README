@@ -22,6 +22,10 @@ USB keyboard and mouse
 (optional) Ethernet, on a network that supports DHCP
 HDMI-to-DVI-D on the P1 DVI-D connector
 
+# Kernel source configuration (optional): Add .repo/local_manifest.xml entry
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest><project name="android_kernel_omap" path="kernel/omap" remote="githubssh" revision="android-omap-cm-panda-3.0" /></manifest>
+
 # Initial setup, part 1: build fastboot
 source build/envsetup.sh
 lunch cm_panda-userdebug
